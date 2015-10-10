@@ -45,12 +45,12 @@ if __name__=="__main__":
     clf.fit(train_x_data, train_y_data)
     
     #print("prediction of training dataset ")
-    with open('training_output.csv','w') as outfile:
-              outfile.write('file_name, outcome\n')
-              for i in range(len(train_x_data)):
-                  output= clf.predict(train_x_data[i])
+    #with open('training_output.csv','w') as outfile:
+    #          outfile.write('file_name, outcome\n')
+    #          for i in range(len(train_x_data)):
+    #              output= clf.predict(train_x_data[i])
 		  #print(output)
-                  outfile.write('%s,%s\n' %(all_files[i], (output_data[output[0]])))
+    #              outfile.write('%s,%s\n' %(all_files[i], (output_data[output[0]])))
 
     test_files=[]
     f=open('input.txt', 'r')
